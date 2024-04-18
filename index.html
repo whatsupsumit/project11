@@ -166,7 +166,8 @@
     // initMDB({ Ripple });
     document.getElementById("GalleryMaker").addEventListener("click", (ev) => {
       ev.preventDefault();
-      window.open("file:///C:/Users/USER/OneDrive/Desktop/Node%20js%20and%20Front%20End%20Project/js-pinterest-clone-main/js-pinterest-clone-main/final_board.html");
+      console.log(window.location);
+      window.open(window.location.origin+"/js-pinterest-clone-main/final_board.html");
     });
     const cards = [...document.getElementsByClassName("card")];
     console.log(cards);
