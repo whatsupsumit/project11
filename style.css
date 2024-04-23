@@ -227,7 +227,7 @@ a{
   margin-top: -5%;
 }
 .hd4 {
-  margin-left: 35%;
+  margin-left: 37%;
   font-size: 60px;
   font-weight: 600;
   background: rgb(214, 214, 224);
@@ -245,21 +245,14 @@ a{
 }
 
 .hd5 {
-  margin-left: 12%;
   font-size: 25px;
+  background-color: rgb(42, 43, 43);
   font-weight: 600;
-  background: rgb(214, 214, 224);
-  background: linear-gradient(
-    71deg,
-    rgba(214, 214, 224, 1) 5%,
-    rgba(152, 211, 124, 1) 46%,
-    rgba(81, 224, 167, 1) 96%
-  );
-  color: transparent;
-  background-clip: text;
-  -webkit-background-clip: text;
+  color: white;
   position: absolute;
-  margin-top: 6%;
+  text-align: center;
+  margin-top: 7%;
+  margin-left: 10%;
 }
 
 .gallery {
@@ -273,13 +266,20 @@ a{
   padding: 2rem;
 }
 
+.cardiB {
+  display: flex;
+  width: 20%;
+  aspect-ratio: 0.75;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
 .card {
   display: flex;
   width: 20%;
   aspect-ratio: 0.75;
   justify-content: center;
   align-items: center;
-  background-color: #514712;
   flex-direction: column;
 }
 
@@ -289,17 +289,26 @@ a{
   border: none;
   padding: 10px 20px;
   border-radius: 5px;
-  width: 35vw;
+  width: 50vw;
   height: 10vh;
   cursor: pointer;
   transition: background-color 0.3s ease;
   position: relative;
   bottom: 15vh;
-  left: 30vw;
+  left: 25vw;
   font-size: 200%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .card > img {
+  aspect-ratio: 0.75;
+  width: 100%;
+  object-fit: cover;
+}
+
+.cardiB > img {
   aspect-ratio: 0.75;
   width: 100%;
   object-fit: cover;
@@ -338,7 +347,6 @@ a{
   flex-wrap: wrap;
   flex-direction: row;
   position: relative;
-  left: -2.5%;
   width: 100vw;
   height: fit-content;
   padding: 5vw;
@@ -383,6 +391,10 @@ a{
   text-align: center;
   margin-top: -120px;
   color: white;
+  background-color: rgb(42, 43, 43);
+  display: flex;
+  width: fit-content;
+  height: fit-content;
 }
 
 .desc {
@@ -398,7 +410,7 @@ a{
   );
 }
 
-.lulla {
+.puppy {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -407,4 +419,37 @@ a{
   border: 3px solid #f90473;
   color: #f90473;
   border-radius: 5px;
+}
+
+#bg-video {
+  object-fit: cover;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  height: 100vh;
+  width: 100vw;
+}
+
+#contact{
+  width: fit-content;
+  margin-left: 42%;
+}
+
+.contact {
+  font-size: 150%;
+  background-color: rgb(42, 43, 43);
+  margin-left: 45%;
+  color: white;
+  width: fit-content;
+  text-align: center;
+}
+
+.email{
+  margin-left: 37%;
+}
+
+.puppy > a{
+  text-decoration: none;
+  color: #f90473 !important;
+  background-color: transparent;
 }
