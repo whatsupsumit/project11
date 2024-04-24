@@ -211,7 +211,7 @@
     const cards = [...document.getElementsByClassName("cardiB")];
     console.log(cards);
     cards.forEach(cardiB => {
-      card.addEventListener("mouseover", () => {
+      cardiB.addEventListener("mouseover", () => {
         if(cardiB.classList.contains("unScale")) {
           cardiB.classList.remove("unScale");
         }
