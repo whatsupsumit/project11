@@ -208,21 +208,21 @@
       console.log(window.location);
       window.open(window.location.href+"/js-pinterest-clone-main/final_board.html");
     });
-    const cards = [...document.getElementsByClassName("card")];
+    const cards = [...document.getElementsByClassName("cardiB")];
     console.log(cards);
-    cards.forEach(card => {
+    cards.forEach(cardiB => {
       card.addEventListener("mouseover", () => {
-        if(card.classList.contains("unScale")) {
-          card.classList.remove("unScale");
+        if(cardiB.classList.contains("unScale")) {
+          cardiB.classList.remove("unScale");
         }
-        card.classList.add("scale");
+        cardiB.classList.add("scale");
         console.log("scaled")
       });
-      card.addEventListener("mouseout", () => {
-        if(card.classList.contains("scale")) {
-          card.classList.remove("scale");
+      cardiB.addEventListener("mouseout", () => {
+        if(cardiB.classList.contains("scale")) {
+          cardiB.classList.remove("scale");
         }
-        card.classList.add("unScale");
+        cardiB.classList.add("unScale");
         console.log("unscaled");
       });
     });
