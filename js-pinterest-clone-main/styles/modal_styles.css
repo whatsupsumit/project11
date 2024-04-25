@@ -32,11 +32,11 @@
 }
 
 #left_side {
-  /* background-color: orange; */
+  background-color: rgb(162, 220, 147);
 }
 
 #right_side {
-  /* background-color: blue; */
+  background-color: rgb(209, 142, 220);
 }
 
 .pint_mock_icon_container {

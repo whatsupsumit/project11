@@ -156,11 +156,10 @@ main {
   left: 20px;
   right: 20px;
   z-index: 1;
-  color: #fff;
 }
 
 .follow button {
-  background-color: #708c43;
+  background-color: #18bfc8c5;
   color: #faf4f4;
   border: none;
   padding: 10px 20px;
@@ -170,7 +169,26 @@ main {
 }
 
 .follow button:hover {
-  background-color: #67d3a8;
+  background: transparent;
+  box-shadow: 1px 1px 25px 10px rgb(8, 229, 245);
+}
+.follow button::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    120deg,
+    transparent,
+    rgba(146, 148, 248, 0.4),
+    transparent
+  );
+  transition: all 650ms;
+}
+.follow:hover::before{
+  box-shadow: 0 0 20px 5px #00fffc;
 }
 
 #bg-video {
@@ -253,6 +271,7 @@ a{
   text-align: center;
   margin-top: 7%;
   margin-left: 10%;
+  border-radius: 10px;
 }
 
 .gallery {
@@ -284,7 +303,7 @@ a{
 }
 
 #GalleryMaker {
-  background-color: #708c43;
+  background-color: #090909;
   color: #faf4f4;
   border: none;
   padding: 10px 20px;
@@ -300,6 +319,23 @@ a{
   display: flex;
   align-items: center;
   justify-content: center;
+  overflow: hidden;
+}
+
+#GalleryMaker::before{
+  content: "";
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(120deg, transparent,#00fffc,transparent);
+  transform: translateX(-100%);
+  transition: 0.5s;
+  position: absolute;
+}
+#GalleryMaker:hover{
+  background: transparent;
+  box-shadow: 0 0 20px 5px #00fffc;
 }
 
 .card > img {
@@ -408,6 +444,7 @@ a{
     rgba(152, 211, 124, 1) 46%,
     rgba(81, 224, 167, 1) 96%
   );
+  border-radius: 15px; /* Adjust the value to change the curvature */
 }
 
 .puppy {
@@ -442,6 +479,7 @@ a{
   color: white;
   width: fit-content;
   text-align: center;
+  border-radius: 9px;
 }
 
 .email{
